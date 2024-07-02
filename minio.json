@@ -1,0 +1,7 @@
+{
+    "url": "http://minio.minio-tenants.svc.cluster.local:80",
+    "accessKey": "BcngD7y202uX3P1i",
+    "secretKey": "fAyrUx3hT2T8SgvQqDkwyXpvRO0SUejc",
+    "api": "s3v4",
+    "path": "auto"
+}
