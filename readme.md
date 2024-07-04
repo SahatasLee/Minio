@@ -11,6 +11,18 @@ helm repo add minio-operator https://operator.min.io
 helm install minio-operator minio-operator/operator --version 5.0.15 -n minio 
 ```
 
+## Service
+
+```bash
+# LoadBalancer
+kubectl patch service -n minio console -p '
+{
+    "spec": {
+        "type": "LoadBalancer"
+    }
+}'
+```
+
 ## Access Token
 
 minio operator console
