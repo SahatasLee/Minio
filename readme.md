@@ -1,6 +1,6 @@
 # Minio
 
-minio version 5.0.15
+minio operator version 5.0.15
 
 [Deploy Operator With Helm — MinIO Object Storage for Kubernetes](https://min.io/docs/minio/kubernetes/upstream/operations/install-deploy-manage/deploy-operator-helm.html)
 
@@ -12,6 +12,8 @@ helm install minio-operator minio-operator/operator --version 5.0.15 -n minio
 ```
 
 ## Service
+
+change service to LoadBalancer
 
 ```bash
 # LoadBalancer

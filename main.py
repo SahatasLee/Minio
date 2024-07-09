@@ -6,8 +6,8 @@ def main():
     # Create a client with the MinIO server playground, its access key
     # and secret key.
     client = Minio("10.111.0.120",
-        access_key="BcngD7y202uX3P1i",
-        secret_key="fAyrUx3hT2T8SgvQqDkwyXpvRO0SUejc",
+        access_key="alCodgcjsbrdd67mV8VQ",
+        secret_key="PEocJDBpoGXaAhcU1QcwJttljlYeB8H1QridYPvR",
         secure=False, # disable tls
     )
 
