@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  annotations:
+    pv.kubernetes.io/bind-completed: "yes"
+    pv.kubernetes.io/bound-by-controller: "yes"
+    volume.beta.kubernetes.io/storage-provisioner: zfs.csi.openebs.io
+    volume.kubernetes.io/selected-node: node4
+    volume.kubernetes.io/storage-provisioner: zfs.csi.openebs.io
+  finalizers:
+  - kubernetes.io/pvc-protection
+  labels:
+    app: minio
+    release: loki
+  name: export-0-loki-minio-0
+  namespace: loki
+spec:
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: 10Gi
+  storageClassName: zpool-ext4
+  volumeMode: Filesystem
+  volumeName: pvc-5860e44c-8ec5-4f79-96c4-2e6f3b72fba8
